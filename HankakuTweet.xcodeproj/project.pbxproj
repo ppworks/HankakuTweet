@@ -20,6 +20,12 @@
 		2487BA8D1973BE9C004EE3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA8B1973BE9C004EE3E4 /* InfoPlist.strings */; };
 		2487BA8F1973BE9C004EE3E4 /* HankakuTweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */; };
 		2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2487BA981973CE98004EE3E4 /* Social.framework */; };
+		2487BA9B1973CFCE004EE3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA9A1973CFCE004EE3E4 /* Main.storyboard */; };
+		2487BA9C1973CFCE004EE3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA9A1973CFCE004EE3E4 /* Main.storyboard */; };
+		2487BA9F1973D039004EE3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA9E1973D039004EE3E4 /* ViewController.m */; };
+		2487BAA01973D039004EE3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA9E1973D039004EE3E4 /* ViewController.m */; };
+		2487BAE71973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
+		2487BAE81973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,11 @@
 		2487BA8C1973BE9C004EE3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HankakuTweetTests.m; sourceTree = "<group>"; };
 		2487BA981973CE98004EE3E4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2487BA9A1973CFCE004EE3E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2487BA9D1973D039004EE3E4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2487BA9E1973D039004EE3E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2487BAE51973DD79004EE3E4 /* NSString+HankakuKana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HankakuKana.h"; sourceTree = "<group>"; };
+		2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HankakuKana.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +126,11 @@
 				2487BA791973BE9B004EE3E4 /* AppDelegate.m */,
 				2487BA7B1973BE9C004EE3E4 /* Images.xcassets */,
 				2487BA701973BE9B004EE3E4 /* Supporting Files */,
+				2487BA9A1973CFCE004EE3E4 /* Main.storyboard */,
+				2487BA9D1973D039004EE3E4 /* ViewController.h */,
+				2487BA9E1973D039004EE3E4 /* ViewController.m */,
+				2487BAE51973DD79004EE3E4 /* NSString+HankakuKana.h */,
+				2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */,
 			);
 			path = HankakuTweet;
 			sourceTree = "<group>";
@@ -223,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2487BA9B1973CFCE004EE3E4 /* Main.storyboard in Resources */,
 				2487BA741973BE9B004EE3E4 /* InfoPlist.strings in Resources */,
 				2487BA7C1973BE9C004EE3E4 /* Images.xcassets in Resources */,
 			);
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2487BA8D1973BE9C004EE3E4 /* InfoPlist.strings in Resources */,
+				2487BA9C1973CFCE004EE3E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2487BA9F1973D039004EE3E4 /* ViewController.m in Sources */,
 				2487BA7A1973BE9B004EE3E4 /* AppDelegate.m in Sources */,
+				2487BAE71973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */,
 				2487BA761973BE9B004EE3E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2487BAE81973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */,
+				2487BAA01973D039004EE3E4 /* ViewController.m in Sources */,
 				2487BA8F1973BE9C004EE3E4 /* HankakuTweetTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
