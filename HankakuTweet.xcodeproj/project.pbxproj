@@ -19,6 +19,7 @@
 		2487BA851973BE9C004EE3E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2487BA6D1973BE9B004EE3E4 /* UIKit.framework */; };
 		2487BA8D1973BE9C004EE3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA8B1973BE9C004EE3E4 /* InfoPlist.strings */; };
 		2487BA8F1973BE9C004EE3E4 /* HankakuTweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */; };
+		2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2487BA981973CE98004EE3E4 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		2487BA8A1973BE9C004EE3E4 /* HankakuTweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HankakuTweetTests-Info.plist"; sourceTree = "<group>"; };
 		2487BA8C1973BE9C004EE3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HankakuTweetTests.m; sourceTree = "<group>"; };
+		2487BA981973CE98004EE3E4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */,
 				2487BA6C1973BE9B004EE3E4 /* CoreGraphics.framework in Frameworks */,
 				2487BA6E1973BE9B004EE3E4 /* UIKit.framework in Frameworks */,
 				2487BA6A1973BE9B004EE3E4 /* Foundation.framework in Frameworks */,
@@ -96,6 +99,7 @@
 		2487BA681973BE9B004EE3E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2487BA981973CE98004EE3E4 /* Social.framework */,
 				2487BA691973BE9B004EE3E4 /* Foundation.framework */,
 				2487BA6B1973BE9B004EE3E4 /* CoreGraphics.framework */,
 				2487BA6D1973BE9B004EE3E4 /* UIKit.framework */,
@@ -439,6 +443,7 @@
 				2487BA941973BE9C004EE3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2487BA951973BE9C004EE3E4 /* Build configuration list for PBXNativeTarget "HankakuTweetTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +452,7 @@
 				2487BA971973BE9C004EE3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
