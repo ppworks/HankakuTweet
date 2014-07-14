@@ -53,7 +53,7 @@
                 break;
         }
     }];
-    [twitterPostVC setInitialText:[NSString stringWithFormat:@"%@(\( ⁰⊖⁰)/)", self.tweetText.text]];
+    [twitterPostVC setInitialText:[NSString stringWithFormat:@"%@", self.tweetText.text]];
     [self presentViewController:twitterPostVC animated:YES completion:nil];
     [self.tweetText resignFirstResponder];
 }
