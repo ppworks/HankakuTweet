@@ -66,7 +66,7 @@
                 self.tweetText.text = @"";
                 self.tweetDone.hidden = NO;
                 [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(hideTweetDone) userInfo:nil repeats:NO];
-                TFLog(@"ﾂｲｰﾄｼﾀｯ");
+                [TestFlight passCheckpoint:@"ﾂｲｰﾄｼﾀｯ"];
                 break;
             case SLComposeViewControllerResultCancelled:
                 break;
@@ -111,7 +111,6 @@
                       animations:^{
                           banner.frame = bannerFrame;
                       }];
-    NSLog(@"YES");
 }
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
@@ -127,26 +126,26 @@
 #pragma mark - i-mobile
 - (void)imobileSdkAdsSpot:(NSString *)spotid didReadyWithValue:(ImobileSdkAdsReadyResult)value
 {
-    NSLog(@"imobileSdkAdsSpot:didReadyWithValue");
+    TFLog(@"imobileSdkAdsSpot:didReadyWithValue");
 }
 
 - (void)imobileSdkAdsSpot:(NSString *)spotid didFailWithValue:(ImobileSdkAdsFailResult)value
 {
-    NSLog(@"imobileSdkAdsSpot:didFailWithValue");
+    TFLog(@"imobileSdkAdsSpot:didFailWithValue");
 }
 
 - (void)imobileSdkAdsSpotIsNotReady:(NSString *)spotid
 {
-    NSLog(@"imobileSdkAdsSpotIsNotReady");
+    TFLog(@"imobileSdkAdsSpotIsNotReady");
 }
 
 - (void)imobileSdkAdsSpotDidClick:(NSString *)spotid
 {
-    NSLog(@"imobileSdkAdsSpotDidClick");
+    TFLog(@"imobileSdkAdsSpotDidClick");
 }
 
 - (void)imobileSdkAdsSpotDidClose:(NSString *)spotid
 {
-    NSLog(@"imobileSdkAdsSpotDidClose");
+    TFLog(@"imobileSdkAdsSpotDidClose");
 }
 @end
