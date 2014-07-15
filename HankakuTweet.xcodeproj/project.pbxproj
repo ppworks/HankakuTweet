@@ -26,6 +26,7 @@
 		2487BAA01973D039004EE3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA9E1973D039004EE3E4 /* ViewController.m */; };
 		2487BAE71973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
 		2487BAE81973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
+		24E0945B1974A2D6008E08C2 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945A1974A2D6008E08C2 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		2487BA9E1973D039004EE3E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2487BAE51973DD79004EE3E4 /* NSString+HankakuKana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HankakuKana.h"; sourceTree = "<group>"; };
 		2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HankakuKana.m"; sourceTree = "<group>"; };
+		24E0945A1974A2D6008E08C2 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E0945B1974A2D6008E08C2 /* iAd.framework in Frameworks */,
 				2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */,
 				2487BA6C1973BE9B004EE3E4 /* CoreGraphics.framework in Frameworks */,
 				2487BA6E1973BE9B004EE3E4 /* UIKit.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		2487BA681973BE9B004EE3E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24E0945A1974A2D6008E08C2 /* iAd.framework */,
 				2487BA981973CE98004EE3E4 /* Social.framework */,
 				2487BA691973BE9B004EE3E4 /* Foundation.framework */,
 				2487BA6B1973BE9B004EE3E4 /* CoreGraphics.framework */,

@@ -31,6 +31,15 @@
     // Do any additional setup after loading the view.
     self.tweetDone.hidden = YES;
     self.tweetText.delegate = self;
+    self.bannerView.delegate = self;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    CGRect bannerFrame = self.bannerView.frame;
+    bannerFrame.origin.y = - bannerFrame.size.height;
+    self.bannerView.frame = bannerFrame;
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,4 +89,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - iAd
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    CGRect bannerFrame = banner.frame;
+    CGRect statusBarViewRect = [[UIApplication sharedApplication] statusBarFrame];
+    bannerFrame.origin.y = statusBarViewRect.size.height;
+    
+    [UIView animateWithDuration:1.0
+                      animations:^{
+                          banner.frame = bannerFrame;
+                      }];
+    NSLog(@"YES");
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    CGRect bannerFrame = banner.frame;
+    bannerFrame.origin.y = - bannerFrame.size.height;
+    [UIView animateWithDuration:1.0
+                     animations:^{
+                         banner.frame = bannerFrame;
+                     }];
+}
 @end
