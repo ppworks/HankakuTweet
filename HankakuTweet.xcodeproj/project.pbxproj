@@ -27,6 +27,11 @@
 		2487BAE71973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
 		2487BAE81973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
 		24E0945B1974A2D6008E08C2 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945A1974A2D6008E08C2 /* iAd.framework */; };
+		24E0945D1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945C1974B5DC008E08C2 /* ImobileSdkAds.framework */; };
+		24E0945E1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945C1974B5DC008E08C2 /* ImobileSdkAds.framework */; };
+		24E094601974B5FC008E08C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945F1974B5FC008E08C2 /* SystemConfiguration.framework */; };
+		24E094621974B60E008E08C2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094611974B60E008E08C2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		24E094641974B617008E08C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094631974B617008E08C2 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,10 @@
 		2487BAE51973DD79004EE3E4 /* NSString+HankakuKana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HankakuKana.h"; sourceTree = "<group>"; };
 		2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HankakuKana.m"; sourceTree = "<group>"; };
 		24E0945A1974A2D6008E08C2 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		24E0945C1974B5DC008E08C2 /* ImobileSdkAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImobileSdkAds.framework; sourceTree = "<group>"; };
+		24E0945F1974B5FC008E08C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		24E094611974B60E008E08C2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		24E094631974B617008E08C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E094641974B617008E08C2 /* CoreLocation.framework in Frameworks */,
+				24E094621974B60E008E08C2 /* AdSupport.framework in Frameworks */,
+				24E094601974B5FC008E08C2 /* SystemConfiguration.framework in Frameworks */,
+				24E0945D1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */,
 				24E0945B1974A2D6008E08C2 /* iAd.framework in Frameworks */,
 				2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */,
 				2487BA6C1973BE9B004EE3E4 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +97,7 @@
 			files = (
 				2487BA831973BE9C004EE3E4 /* XCTest.framework in Frameworks */,
 				2487BA851973BE9C004EE3E4 /* UIKit.framework in Frameworks */,
+				24E0945E1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */,
 				2487BA841973BE9C004EE3E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +127,10 @@
 		2487BA681973BE9B004EE3E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24E094631974B617008E08C2 /* CoreLocation.framework */,
+				24E094611974B60E008E08C2 /* AdSupport.framework */,
+				24E0945F1974B5FC008E08C2 /* SystemConfiguration.framework */,
+				24E0945C1974B5DC008E08C2 /* ImobileSdkAds.framework */,
 				24E0945A1974A2D6008E08C2 /* iAd.framework */,
 				2487BA981973CE98004EE3E4 /* Social.framework */,
 				2487BA691973BE9B004EE3E4 /* Foundation.framework */,
@@ -390,6 +408,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HankakuTweet/HankakuTweet-Prefix.pch";
 				INFOPLIST_FILE = "HankakuTweet/HankakuTweet-Info.plist";
@@ -404,6 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HankakuTweet/HankakuTweet-Prefix.pch";
 				INFOPLIST_FILE = "HankakuTweet/HankakuTweet-Info.plist";
@@ -420,6 +446,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HankakuTweet/HankakuTweet-Prefix.pch";
@@ -442,6 +469,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HankakuTweet/HankakuTweet-Prefix.pch";
