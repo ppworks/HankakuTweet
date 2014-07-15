@@ -20,8 +20,8 @@
 		2487BA8D1973BE9C004EE3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA8B1973BE9C004EE3E4 /* InfoPlist.strings */; };
 		2487BA8F1973BE9C004EE3E4 /* HankakuTweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */; };
 		2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2487BA981973CE98004EE3E4 /* Social.framework */; };
-		2487BA9B1973CFCE004EE3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA9A1973CFCE004EE3E4 /* Main.storyboard */; };
-		2487BA9C1973CFCE004EE3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA9A1973CFCE004EE3E4 /* Main.storyboard */; };
+		2487BA9B1973CFCE004EE3E4 /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA9A1973CFCE004EE3E4 /* Main_iphone.storyboard */; };
+		2487BA9C1973CFCE004EE3E4 /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487BA9A1973CFCE004EE3E4 /* Main_iphone.storyboard */; };
 		2487BA9F1973D039004EE3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA9E1973D039004EE3E4 /* ViewController.m */; };
 		2487BAA01973D039004EE3E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BA9E1973D039004EE3E4 /* ViewController.m */; };
 		2487BAE71973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
@@ -39,6 +39,8 @@
 		24E094701974C13A008E08C2 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 24E094681974C13A008E08C2 /* release_notes.md */; };
 		24E094711974C13A008E08C2 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 24E094681974C13A008E08C2 /* release_notes.md */; };
 		24E094731974C178008E08C2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094721974C178008E08C2 /* libz.dylib */; };
+		24E094751974D2E4008E08C2 /* Main_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E094741974D2E4008E08C2 /* Main_ipad.storyboard */; };
+		24E094761974D2E4008E08C2 /* Main_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E094741974D2E4008E08C2 /* Main_ipad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +71,7 @@
 		2487BA8C1973BE9C004EE3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HankakuTweetTests.m; sourceTree = "<group>"; };
 		2487BA981973CE98004EE3E4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		2487BA9A1973CFCE004EE3E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2487BA9A1973CFCE004EE3E4 /* Main_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iphone.storyboard; sourceTree = "<group>"; };
 		2487BA9D1973D039004EE3E4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2487BA9E1973D039004EE3E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2487BAE51973DD79004EE3E4 /* NSString+HankakuKana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HankakuKana.h"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		24E0946A1974C13A008E08C2 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		24E0946B1974C13A008E08C2 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		24E094721974C178008E08C2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		24E094741974D2E4008E08C2 /* Main_ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_ipad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +170,8 @@
 				2487BA791973BE9B004EE3E4 /* AppDelegate.m */,
 				2487BA7B1973BE9C004EE3E4 /* Images.xcassets */,
 				2487BA701973BE9B004EE3E4 /* Supporting Files */,
-				2487BA9A1973CFCE004EE3E4 /* Main.storyboard */,
+				2487BA9A1973CFCE004EE3E4 /* Main_iphone.storyboard */,
+				24E094741974D2E4008E08C2 /* Main_ipad.storyboard */,
 				2487BA9D1973D039004EE3E4 /* ViewController.h */,
 				2487BA9E1973D039004EE3E4 /* ViewController.m */,
 				2487BAE51973DD79004EE3E4 /* NSString+HankakuKana.h */,
@@ -293,7 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2487BA9B1973CFCE004EE3E4 /* Main.storyboard in Resources */,
+				2487BA9B1973CFCE004EE3E4 /* Main_iphone.storyboard in Resources */,
+				24E094751974D2E4008E08C2 /* Main_ipad.storyboard in Resources */,
 				2487BA741973BE9B004EE3E4 /* InfoPlist.strings in Resources */,
 				24E0946E1974C13A008E08C2 /* README.md in Resources */,
 				2487BA7C1973BE9C004EE3E4 /* Images.xcassets in Resources */,
@@ -305,10 +310,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E094761974D2E4008E08C2 /* Main_ipad.storyboard in Resources */,
 				24E094711974C13A008E08C2 /* release_notes.md in Resources */,
 				24E0946F1974C13A008E08C2 /* README.md in Resources */,
 				2487BA8D1973BE9C004EE3E4 /* InfoPlist.strings in Resources */,
-				2487BA9C1973CFCE004EE3E4 /* Main.storyboard in Resources */,
+				2487BA9C1973CFCE004EE3E4 /* Main_iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

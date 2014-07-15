@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="slE-yO-lau">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7uP-4c-SM1">
+            <objects>
+                <viewController id="slE-yO-lau" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wvb-GF-Bdl"/>
+                        <viewControllerLayoutGuide type="bottom" id="7cy-4w-wco"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Shm-kt-MxF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0d-Pe-o81">
+                                <rect key="frame" x="0.0" y="30" width="768" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </adBannerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="220-4h-bWI">
+                                <rect key="frame" x="15" y="114" width="738" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abt-l1-uU7">
+                                <rect key="frame" x="320" y="295" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="TweetButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchTweetButton:" destination="slE-yO-lau" eventType="touchUpInside" id="Bga-Wi-ntG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="TweetButtonDone" translatesAutoresizingMaskIntoConstraints="NO" id="yZb-1Y-eDo">
+                                <rect key="frame" x="320" y="295" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="220-4h-bWI" firstAttribute="leading" secondItem="Shm-kt-MxF" secondAttribute="leading" constant="15" id="2kG-Hb-Yns"/>
+                            <constraint firstAttribute="trailing" secondItem="p0d-Pe-o81" secondAttribute="trailing" id="6vJ-It-bNz"/>
+                            <constraint firstItem="p0d-Pe-o81" firstAttribute="leading" secondItem="Shm-kt-MxF" secondAttribute="leading" id="B09-kw-ung"/>
+                            <constraint firstAttribute="trailing" secondItem="220-4h-bWI" secondAttribute="trailing" constant="15" id="GBu-27-GBb"/>
+                            <constraint firstAttribute="centerX" secondItem="yZb-1Y-eDo" secondAttribute="centerX" id="JmP-3c-Tph"/>
+                            <constraint firstAttribute="centerX" secondItem="abt-l1-uU7" secondAttribute="centerX" id="yvD-lC-RbS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="p0d-Pe-o81" id="4X4-dQ-w7S"/>
+                        <outlet property="tweetDone" destination="yZb-1Y-eDo" id="Yc1-C3-NHK"/>
+                        <outlet property="tweetText" destination="220-4h-bWI" id="RZh-zA-UYx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXz-8t-aNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="-262"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TweetButton" width="128" height="128"/>
+        <image name="TweetButtonDone" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
