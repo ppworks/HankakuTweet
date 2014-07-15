@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "Social/Social.h"
 #import "NSString+HankakuKana.h"
+#import "TestFlight.h"
+#define NSLog(__FORMAT__, ...) TFLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 @interface ViewController ()
 
@@ -64,6 +66,7 @@
                 self.tweetText.text = @"";
                 self.tweetDone.hidden = NO;
                 [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(hideTweetDone) userInfo:nil repeats:NO];
+                TFLog(@"ﾂｲｰﾄｼﾀｯ");
                 break;
             case SLComposeViewControllerResultCancelled:
                 break;
