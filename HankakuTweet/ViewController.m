@@ -36,8 +36,9 @@
     self.bannerView.delegate = self;
     
     [ImobileSdkAds registerWithPublisherID:@"27320" MediaID:@"110380" SpotID:@"256954"];
+    [ImobileSdkAds setSpotDelegate:@"256954" delegate:self];
     [ImobileSdkAds startBySpotID:@"256954"];
-    [ImobileSdkAds showBySpotID:@"256954" ViewController:self Position:CGPointMake(10, self.view.frame.size.height - 220)];
+    [ImobileSdkAds showBySpotID:@"256954" ViewController:self Position:CGPointMake(10, self.view.frame.size.height - 260)];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -46,9 +47,6 @@
     CGRect bannerFrame = self.bannerView.frame;
     bannerFrame.origin.y = - bannerFrame.size.height;
     self.bannerView.frame = bannerFrame;
-    
-    [ImobileSdkAds setSpotDelegate:@"256954" delegate:self];
-    [ImobileSdkAds showBySpotID:@"256954"];
 }
 
 - (void)didReceiveMemoryWarning
