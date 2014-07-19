@@ -54,12 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240ABB77197B19090042EF20 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = "HankakuTweet-Info.plist"; sourceTree = "<group>"; };
+		240ABB78197B19090042EF20 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		240ABB79197B19090042EF20 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2487BA661973BE9B004EE3E4 /* HankakuTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HankakuTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2487BA691973BE9B004EE3E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2487BA6B1973BE9B004EE3E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2487BA6D1973BE9B004EE3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2487BA711973BE9B004EE3E4 /* HankakuTweet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HankakuTweet-Info.plist"; sourceTree = "<group>"; };
-		2487BA731973BE9B004EE3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2487BA751973BE9B004EE3E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2487BA771973BE9B004EE3E4 /* HankakuTweet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HankakuTweet-Prefix.pch"; sourceTree = "<group>"; };
 		2487BA781973BE9B004EE3E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		2487BA811973BE9C004EE3E4 /* HankakuTweetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HankakuTweetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2487BA821973BE9C004EE3E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2487BA8A1973BE9C004EE3E4 /* HankakuTweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HankakuTweetTests-Info.plist"; sourceTree = "<group>"; };
-		2487BA8C1973BE9C004EE3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2487BA8E1973BE9C004EE3E4 /* HankakuTweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HankakuTweetTests.m; sourceTree = "<group>"; };
 		2487BA981973CE98004EE3E4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2487BA9A1973CFCE004EE3E4 /* Main_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iphone.storyboard; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 		2487BA701973BE9B004EE3E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2487BA711973BE9B004EE3E4 /* HankakuTweet-Info.plist */,
+				240ABB76197B18D10042EF20 /* HankakuTweet-Info.plist */,
 				2487BA721973BE9B004EE3E4 /* InfoPlist.strings */,
 				2487BA751973BE9B004EE3E4 /* main.m */,
 				2487BA771973BE9B004EE3E4 /* HankakuTweet-Prefix.pch */,
@@ -280,6 +280,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 2487BA5D1973BE9B004EE3E4;
 			productRefGroup = 2487BA671973BE9B004EE3E4 /* Products */;
@@ -353,10 +354,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		240ABB76197B18D10042EF20 /* HankakuTweet-Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240ABB77197B19090042EF20 /* ja */,
+			);
+			name = "HankakuTweet-Info.plist";
+			sourceTree = "<group>";
+		};
 		2487BA721973BE9B004EE3E4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2487BA731973BE9B004EE3E4 /* en */,
+				240ABB78197B19090042EF20 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -364,7 +373,7 @@
 		2487BA8B1973BE9C004EE3E4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2487BA8C1973BE9C004EE3E4 /* en */,
+				240ABB79197B19090042EF20 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
