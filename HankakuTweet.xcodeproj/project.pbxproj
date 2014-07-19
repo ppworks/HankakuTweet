@@ -27,11 +27,7 @@
 		2487BAE71973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
 		2487BAE81973DD79004EE3E4 /* NSString+HankakuKana.m in Sources */ = {isa = PBXBuildFile; fileRef = 2487BAE61973DD79004EE3E4 /* NSString+HankakuKana.m */; };
 		24E0945B1974A2D6008E08C2 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945A1974A2D6008E08C2 /* iAd.framework */; };
-		24E0945D1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945C1974B5DC008E08C2 /* ImobileSdkAds.framework */; };
 		24E0945E1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945C1974B5DC008E08C2 /* ImobileSdkAds.framework */; };
-		24E094601974B5FC008E08C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0945F1974B5FC008E08C2 /* SystemConfiguration.framework */; };
-		24E094621974B60E008E08C2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094611974B60E008E08C2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		24E094641974B617008E08C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094631974B617008E08C2 /* CoreLocation.framework */; };
 		24E0946C1974C13A008E08C2 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094661974C13A008E08C2 /* libTestFlight.a */; };
 		24E0946D1974C13A008E08C2 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E094661974C13A008E08C2 /* libTestFlight.a */; };
 		24E0946E1974C13A008E08C2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24E094671974C13A008E08C2 /* README.md */; };
@@ -97,10 +93,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E094731974C178008E08C2 /* libz.dylib in Frameworks */,
-				24E094641974B617008E08C2 /* CoreLocation.framework in Frameworks */,
-				24E094621974B60E008E08C2 /* AdSupport.framework in Frameworks */,
-				24E094601974B5FC008E08C2 /* SystemConfiguration.framework in Frameworks */,
-				24E0945D1974B5DC008E08C2 /* ImobileSdkAds.framework in Frameworks */,
 				24E0945B1974A2D6008E08C2 /* iAd.framework in Frameworks */,
 				24E0946C1974C13A008E08C2 /* libTestFlight.a in Frameworks */,
 				2487BA991973CE98004EE3E4 /* Social.framework in Frameworks */,

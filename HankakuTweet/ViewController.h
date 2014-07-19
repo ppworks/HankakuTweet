@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
-#import "ImobileSdkAds/ImobileSdkAds.h"
 
-@interface ViewController : UIViewController <UITextViewDelegate, ADBannerViewDelegate, IMobileSdkAdsDelegate>
+@interface ViewController : UIViewController <UITextViewDelegate, ADBannerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *tweetText;
 @property (weak, nonatomic) IBOutlet UIImageView *tweetDone;
 @property (weak, nonatomic) IBOutlet ADBannerView *bannerView;

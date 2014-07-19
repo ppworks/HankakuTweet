@@ -34,11 +34,6 @@
     self.tweetDone.hidden = YES;
     self.tweetText.delegate = self;
     self.bannerView.delegate = self;
-    
-    [ImobileSdkAds registerWithPublisherID:@"27320" MediaID:@"110380" SpotID:@"256954"];
-    [ImobileSdkAds setSpotDelegate:@"256954" delegate:self];
-    [ImobileSdkAds startBySpotID:@"256954"];
-    [ImobileSdkAds showBySpotID:@"256954" ViewController:self Position:CGPointMake(10, self.view.frame.size.height - 260)];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -119,31 +114,5 @@
                      animations:^{
                          banner.frame = bannerFrame;
                      }];
-}
-
-#pragma mark - i-mobile
-- (void)imobileSdkAdsSpot:(NSString *)spotid didReadyWithValue:(ImobileSdkAdsReadyResult)value
-{
-    TFLog(@"imobileSdkAdsSpot:didReadyWithValue");
-}
-
-- (void)imobileSdkAdsSpot:(NSString *)spotid didFailWithValue:(ImobileSdkAdsFailResult)value
-{
-    TFLog(@"imobileSdkAdsSpot:didFailWithValue");
-}
-
-- (void)imobileSdkAdsSpotIsNotReady:(NSString *)spotid
-{
-    TFLog(@"imobileSdkAdsSpotIsNotReady");
-}
-
-- (void)imobileSdkAdsSpotDidClick:(NSString *)spotid
-{
-    TFLog(@"imobileSdkAdsSpotDidClick");
-}
-
-- (void)imobileSdkAdsSpotDidClose:(NSString *)spotid
-{
-    TFLog(@"imobileSdkAdsSpotDidClose");
 }
 @end
